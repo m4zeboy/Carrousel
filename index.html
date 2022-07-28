@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="carousel">
+    <div class="controls">
+      <div class="control prev">
+        <a href="#" onclick="prev()"> <h2>&lt;</h2> </a>
+      </div>
+      <div class="control next">
+        <a href="#" onclick="next()"> <h2>&gt;</h2> </a>
+      </div>
+    </div>
+    <div class="slides">
+      <div class="slide" data-index="0">
+        <h1>Slide 1</h1>
+        <button>botão</button>
+      </div>
+      <div class="slide active" data-index="1" data-selected="true">
+        <h1>Slide 2</h1>
+      </div>
+      <div class="slide" data-index="2">
+        <h1>Slide 3</h1>
+      </div>
+
+      <div class="slide" data-index="3">
+        <h1>Slide 4</h1>
+      </div>
+
+      <div class="slide" data-index="4">
+        <h1>Slide 5</h1>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
