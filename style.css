@@ -20,21 +20,24 @@
 }
 
 .slide {
-  width: 1px;
+  width: 0px;
   transition: all .3s;
   overflow: hidden;
+  visibility: hidden;
+  background-color: #222;
 }
+
 .slide.active {
+  color: white;
   visibility: visible;
   width: 100%;
+  max-height: 300px;
   height: 300px;
   z-index: 9;
   padding: 40px 150px;
 }
 
-.slides .slide:nth-child(even) {
-  background-color: purple;
-}
+
 
 
 .controls {
@@ -78,4 +81,10 @@
   color: white;
   border-radius: 20px;
 }
-
+/* 
+#a {
+  background: url(https://images.unsplash.com/photo-1658679684720-12041e151b90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMzfGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */

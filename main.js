@@ -5,7 +5,7 @@ const slidesIndexes = [0,1,2];
 function prev() {
   let prevIndex = Number(selected.dataset.index) - 1;
   if(selected.dataset.index == 0) {
-    prevIndex = 2
+    prevIndex = slides.length - 1
   }
   selected.classList.remove("active");
   selected.setAttribute("data-selected", "false");
